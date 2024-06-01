@@ -12,7 +12,7 @@ async function getcurrentlocation(){
     // var loc= await res.json();
     // console.log(loc)
     // document.getElementById("input").value=loc.currentCity;
-    const request = await fetch("https://ipinfo.io/json?token=a3a1f9da8f5d72")
+    const request = await fetch("https://ipinfo.io/json?token=")
 const jsonResponse = await request.json()
 
 document.getElementById("input").value=jsonResponse.city
@@ -21,7 +21,7 @@ document.getElementById("input").value=jsonResponse.city
 
 
 butt.addEventListener("click",function(e){
-    const apikey="34036451f48f307f3f0a2ca1b24aee35";
+    const apikey="";
     const apiurl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
     
 
